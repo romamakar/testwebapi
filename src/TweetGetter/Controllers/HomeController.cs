@@ -2,6 +2,7 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using System;
+using System.Net.Http;
 using System.Threading.Tasks;
 using TweetGetter.Extensions;
 using TweetGetter.Helper;
@@ -25,14 +26,20 @@ namespace TweetGetter.Controllers
 
             if (fromDate.HasValue && toDate.HasValue)
             {
+                HttpClient client = null; 
                 try
                 {
-                    Data.Tweets.ListAllTweets = await GetterTwets.GetProductAsync(path, fromDate.Value, toDate.Value);
+                    client = new HttpClient();
+                    Data.Tweets.ListAllTweets = await GetterTwets.GetProductAsync(client, path, fromDate.Value, toDate.Value);
                 }
                 catch (Exception ex)
                 {
                     logger.LogError(ex.Message);
                     ViewBag.Error = ex.Message;
+                }
+                finally
+                {
+                     client?.Dispose();
                 }
 
             }

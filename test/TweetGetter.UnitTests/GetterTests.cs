@@ -11,7 +11,7 @@ namespace TweetGetter.UnitTests
         [Fact]
         public async Task IsThrowExceptionOnIncorrectUrl()
         {
-            await Assert.ThrowsAsync<HttpRequestException>(() => GetterTwets.GetProductAsync("http://gettest", new DateTime(), new DateTime()));
+            await Assert.ThrowsAsync<HttpRequestException>(() => GetterTwets.GetProductAsync(new HttpClient(),"http://gettest", new DateTime(), new DateTime()));
         }
     }
 }

@@ -7,7 +7,7 @@ This is a simple application for getting tweets from  [this REST API](https://ba
 
 Just enter dates and times into pickers and click "Get tweets"
 
-##Instalation
+## Instalation
 
 1. Make sure that have installed [aspnetcore2.0](https://www.microsoft.com/net/download/windows)
 2. Clone this project
@@ -20,9 +20,9 @@ dotnet run
 ```
 4. Your app will be available on http://localhost:5000
 
-##Docker
+## Docker
 
-1. Install [docker] (https://www.docker.com/community-edition)
+1. Install [docker](https://www.docker.com/community-edition)
 2. Clone this project
 3. Go to 'src\TweetGetter'
 4. Run 

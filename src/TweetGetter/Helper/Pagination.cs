@@ -13,6 +13,7 @@ namespace TweetGetter.Helper
             result.Data = list.Skip(PageSize * (PageNumber - 1)).Take(PageSize).ToList();
             result.TotalPages = Convert.ToInt32(Math.Ceiling((double)list.Count() / PageSize));
             result.CurrentPage = PageNumber;
+            result.PageSize = PageSize;
             return result;
         }
     }

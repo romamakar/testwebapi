@@ -1,16 +1,7 @@
-FROM microsoft/aspnetcore-build:2.0 AS build-env
-
-# Copy csproj and restore as distinct layers
-COPY *.csproj ./
-RUN dotnet restore
-
-# Copy everything else and build
-COPY . ./
-RUN dotnet publish -c Release -o out
-
-# Build runtime image
-FROM microsoft/aspnetcore:2.0
+FROM microsoft/dotnet:2.1-sdk 
+COPY . /app
 WORKDIR /app
-COPY --from=build-env /app/out .
+RUN["dotnet", "restore"]
+RUN["dotnet", "build"]
 EXPOSE 5000/tcp
-ENTRYPOINT ["dotnet", "TweetGetter.dll"]
+ENTRYPOINT["dotnet", "run"]

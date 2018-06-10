@@ -40,13 +40,17 @@ function PaggingTemplate(totalPage, currentPage, pageSize) {
     }
     var picker = '';
     if (pageSize === 20) {
-        picker = '<li><select ng-model="pageSize" id="selectedId"><option value="20" selected>20</option><option value="50">50</option><option value="100">100</option><option value="150">150</option></select> </li>';
+        picker = '<li><select ng-model="pageSize" id="selectedId"><option value="20" selected>20</option><option value="50">50</option><option value="100">100</option><option value="150">150</option><option value="500">500</option><option value="5000">5000</option></select> </li>';
     } else if (pageSize === 50) {
-        picker = '<li><select ng-model="pageSize" id="selectedId"><option value="20">20</option><option value="50" selected>50</option><option value="100">100</option><option value="150">150</option></select> </li>';
+        picker = '<li><select ng-model="pageSize" id="selectedId"><option value="20">20</option><option value="50" selected>50</option><option value="100">100</option><option value="150">150</option><option value="500">500</option><option value="5000">5000</option></select> </li>';
     } else if (pageSize === 100) {
-        picker = '<li><select ng-model="pageSize" id="selectedId"><option value="20">20</option><option value="50">50</option><option value="100" selected>100</option><option value="150">150</option></select> </li>';
+        picker = '<li><select ng-model="pageSize" id="selectedId"><option value="20">20</option><option value="50">50</option><option value="100" selected>100</option><option value="150">150</option><option value="500">500</option><option value="5000">5000</option></select> </li>';
     } else if (pageSize === 150) {
-        picker = '<li><select ng-model="pageSize" id="selectedId"><option value="20">20</option><option value="50">50</option><option value="100">100</option><option value="150" selected>150</option></select> </li>';
+        picker = '<li><select ng-model="pageSize" id="selectedId"><option value="20">20</option><option value="50">50</option><option value="100">100</option><option value="150" selected>150</option><option value="500">500</option><option value="5000">5000</option></select> </li>';
+    } else if (pageSize === 500) {
+        picker = '<li><select ng-model="pageSize" id="selectedId"><option value="20">20</option><option value="50">50</option><option value="100">100</option><option value="150">150</option><option value="500" selected>500</option><option value="5000">5000</option></select> </li>';
+    } else if (pageSize === 5000) {
+        picker = '<li><select ng-model="pageSize" id="selectedId"><option value="20">20</option><option value="50">50</option><option value="100">100</option><option value="150">150</option><option value="500">500</option><option value="5000" selected>5000</option></select> </li>';
     }
 
 

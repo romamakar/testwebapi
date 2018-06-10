@@ -10,15 +10,4 @@ C:\Users\Роман\Desktop\testwebapi\testwebapi\obj\Debug\netcoreapp2.0\TweetG
 C:\Users\Роман\Desktop\testwebapi\testwebapi\obj\Debug\netcoreapp2.0\TweetGetter.AssemblyInfo.cs
 C:\Users\Роман\Desktop\testwebapi\testwebapi\obj\Debug\netcoreapp2.0\TweetGetter.dll
 C:\Users\Роман\Desktop\testwebapi\testwebapi\obj\Debug\netcoreapp2.0\TweetGetter.pdb
-C:\Users\Роман\Desktop\testwebapi\src\TweetGetter\bin\Debug\netcoreapp2.0\appsettings.json
-C:\Users\Роман\Desktop\testwebapi\src\TweetGetter\bin\Debug\netcoreapp2.0\TweetGetter.deps.json
-C:\Users\Роман\Desktop\testwebapi\src\TweetGetter\bin\Debug\netcoreapp2.0\TweetGetter.runtimeconfig.json
-C:\Users\Роман\Desktop\testwebapi\src\TweetGetter\bin\Debug\netcoreapp2.0\TweetGetter.runtimeconfig.dev.json
 C:\Users\Роман\Desktop\testwebapi\src\TweetGetter\bin\Debug\netcoreapp2.0\TweetGetter.dll
-C:\Users\Роман\Desktop\testwebapi\src\TweetGetter\bin\Debug\netcoreapp2.0\TweetGetter.pdb
-C:\Users\Роман\Desktop\testwebapi\src\TweetGetter\obj\Debug\netcoreapp2.0\TweetGetter.csprojAssemblyReference.cache
-C:\Users\Роман\Desktop\testwebapi\src\TweetGetter\obj\Debug\netcoreapp2.0\TweetGetter.csproj.CoreCompileInputs.cache
-C:\Users\Роман\Desktop\testwebapi\src\TweetGetter\obj\Debug\netcoreapp2.0\TweetGetter.AssemblyInfoInputs.cache
-C:\Users\Роман\Desktop\testwebapi\src\TweetGetter\obj\Debug\netcoreapp2.0\TweetGetter.AssemblyInfo.cs
-C:\Users\Роман\Desktop\testwebapi\src\TweetGetter\obj\Debug\netcoreapp2.0\TweetGetter.dll
-C:\Users\Роман\Desktop\testwebapi\src\TweetGetter\obj\Debug\netcoreapp2.0\TweetGetter.pdb

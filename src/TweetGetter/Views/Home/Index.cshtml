@@ -1,0 +1,39 @@
+﻿@using TweetGetter.Extensions
+@model int
+@{
+    ViewData["Title"] = "Home Page";
+}
+<br />
+<form asp-action="Index" method="post">
+    <div class="form-actions no-color">
+        <p>
+            From: <input type="datetime-local" name="fromDate" value=@ViewBag.FromDate max=@DateTime.Now.ToUTCView() required />
+            To: <input type="datetime-local" name="toDate" value=@ViewBag.ToDate max="@DateTime.Now.ToUTCView()" required />
+            <input type="submit" value="Get tweets" />
+        </p>
+    </div>
+</form>
+
+<p> Returned @Model tweet(s)</p>
+
+@if (!string.IsNullOrEmpty(ViewBag.Error))
+{
+    <p> While getting tweets the next error occured</p>
+    <p> @ViewBag.Error</p>
+}
+
+@if (ViewBag.Visibility)
+{
+    <br />
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Date/Time</th>
+                <th>Text</th>
+            </tr>
+        </thead>
+        <tbody id="tblData"></tbody>
+    </table>
+    <div id="paged" />
+}
+

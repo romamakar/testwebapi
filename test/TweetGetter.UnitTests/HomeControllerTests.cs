@@ -17,9 +17,8 @@ namespace TweetGetter.UnitTests
         [Fact]
         public async Task Index_ReturnsAViewResult()
         {
-
             var mock = new Config(new Section());
-            var mocklogger = new Mock<ILogger>();
+            var mocklogger = new Mock<ILogger<HomeController>>();
             var controller = new HomeController(mock, mocklogger.Object);
             var result = await controller.Index(new DateTime(2011,01,01), new DateTime(2011, 01, 01)) ;
 

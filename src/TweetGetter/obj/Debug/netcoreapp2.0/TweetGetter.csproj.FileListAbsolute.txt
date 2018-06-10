@@ -10,4 +10,3 @@ C:\Users\Роман\Desktop\testwebapi\testwebapi\obj\Debug\netcoreapp2.0\TweetG
 C:\Users\Роман\Desktop\testwebapi\testwebapi\obj\Debug\netcoreapp2.0\TweetGetter.AssemblyInfo.cs
 C:\Users\Роман\Desktop\testwebapi\testwebapi\obj\Debug\netcoreapp2.0\TweetGetter.dll
 C:\Users\Роман\Desktop\testwebapi\testwebapi\obj\Debug\netcoreapp2.0\TweetGetter.pdb
-C:\Users\Роман\Desktop\testwebapi\src\TweetGetter\bin\Debug\netcoreapp2.0\TweetGetter.dll

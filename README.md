@@ -21,6 +21,7 @@ dotnet run
 4. Your app will be available on http://localhost:5000
 
 ## Docker
+[![Codefresh build status]( https://g.codefresh.io/api/badges/build?repoOwner=romamakar&repoName=testwebapi&branch=master&pipelineName=testwebapi&accountName=romamakar_marketplace&type=cf-1)]( https://g.codefresh.io/repositories/romamakar/testwebapi/builds?filter=trigger:build;branch:master;service:5b1ed84c29b6d0e4ea24e526~testwebapi)
 
 1. Install [docker](https://www.docker.com/community-edition)
 2. Clone this project
